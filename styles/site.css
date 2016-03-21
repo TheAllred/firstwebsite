@@ -2,45 +2,46 @@ html {
   color: #333;
 }
 body {
+  margin: 0;
+  padding: 0;
   text-align: center;
-  background: white;
-  background-image: url('http://showcase.seydesign.com/showcasefiles/filesharing/Aqua-Blue2.jpg');
   font-family: sans-serif;
+  background: #202020;
 }
 
 nav {
   text-align: left;
-  width: 60vw;
+  width: 100vw;
   min-width: 320px;
   margin: auto;
   line-height: 40px;
-  margin-top: 32px;
   color: white;
+  background: #202020;
 }
 .float-right {
   float: right;
 }
 
 nav a:link h1 {
-  font-size: 3rem;
+  font-size: 1rem;
   margin: 0px;
   display: inline;
+  font-weight: normal;
 }
 
 nav a:link {
+  display: inline-block;
   color: white;
   text-decoration: none;
-  border-top: 256px solid transparent;
-  border-bottom: 12px solid transparent;
   box-shadow: 0px 0px 0px transparent;
-  padding: 4px 15px;
-  padding-bottom: .2em;
-  margin: 0px 4px;
+  padding: 0px 15px;
+  margin: 0px;
   transition-duration: .25s;
+  line-height: 40px;
 }
 
 nav a:hover {
-  background: hsla(278, 100%, 25%, 0.27);
+  background: #2D2D2D;
   color: inherit;
 }
 
@@ -49,7 +50,7 @@ nav a:visited {
 }
 
 nav a:active {
-  background: purple;
+  background: black;
   transition-duration: 0s;
 }
 
@@ -109,4 +110,69 @@ main h1:after {
   display: block;
   border-radius: 100px;
   margin: auto;
+}
+
+h2.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+  z-index: 2;
+}
+
+.pulser {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 230px;
+  height: 230px;
+  border-radius: 1000px;
+  border: 5px solid #0080ff;
+  z-index: 1;
+  animation-name: pulser-anim;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes pulser-anim {
+    0%   {
+      background: transparent;
+      border-color: #0080ff;
+      width: 230px;
+      height: 230px;
+    }
+    100% {
+      background: #005ece;
+      border-color: transparent;
+      width: 200px;
+      height: 200px;
+    }
+}
+.pulser2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  border-radius: 3px;
+  z-index: 0;
+  animation-name: pulser2-anim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: #404040;
+}
+@keyframes pulser2-anim {
+    0%   {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
 }
