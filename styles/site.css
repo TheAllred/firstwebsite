@@ -141,8 +141,8 @@ h2.name {
 }
 @keyframes pulser-anim {
     0%   {
-      background: #B12AB9;
-      border-color: #B12AB9;
+      background: #6B37E6;
+      border-color: TRANSPARENT;
       width: 230px;
       height: 230px;
     }
