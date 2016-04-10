@@ -196,6 +196,7 @@ h2.name {
   position: absolute;
   transform: scale(0);
   animation: square-anim 4.5s infinite;
+  opacity: 0;
 }
 
 h1#logo {
@@ -218,14 +219,17 @@ h1#logo {
 @keyframes square-anim {
   0% {
     transform: scale(0) rotate(90deg) translateY(100%);
+    opacity: 0;
   }
   12.5% {
     transform: scale(0) rotate(90deg) translateY(100%);
   }
   50% {
     transform: scale(1) rotate(0deg) translateY(0%);
+    opacity: 1;
   }
   100% {
     transform: scale(0) rotate(-90deg) translateY(100%);
+    opacity: 0;
   }
 }
