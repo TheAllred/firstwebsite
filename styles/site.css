@@ -7,7 +7,10 @@ body {
   text-align: center;
   font-family: sans-serif;
   background: #202020;
+background: url(https://images.unsplash.com/photo-1467173572719-f14b9fb86e5f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b734e103303c5965225682077ee72f86);
+background-size: cover;
 }
+
 
 nav {
   text-align: left;
@@ -215,11 +218,12 @@ h1#logo {
   border: 2px solid #eee;
   white-space: nowrap;
 }
-p1#TextBox {
+h1#logo2 {
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 2.5rem;
   padding:  .5em 1em;
   margin: 0px;
   text-align: center;
@@ -228,7 +232,44 @@ p1#TextBox {
   box-shadow: 0px 0px 16px rgba(0,0,0,.8),
               0px 0px 64px black inset;
   border: 2px solid #eee;
-  
+  white-space: nowrap;
+}
+#TextBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding:  .5em 1em;
+  margin: 0px;
+  text-align: left;
+  color: #eee;
+  background: rgba(0,0,0,.6);
+  box-shadow: 0px 0px 16px rgba(0,0,0,.8),
+              0px 0px 64px black inset;
+  border: 2px solid #eee;
+
+}
+
+#links {
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#links a:link{
+  color: white;
+  text-decoration: none;
+  padding:4px 10px;
+}
+#links a:visited{
+color: white;
+
+}
+#links a:hover{
+  background: rgba(0,0,0,.3);
+}
+#links a:active{
+
 }
 @keyframes square-anim {
   0% {
