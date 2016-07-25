@@ -9,6 +9,7 @@ body {
   background: #202020;
 background: url(https://images.unsplash.com/photo-1467173572719-f14b9fb86e5f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b734e103303c5965225682077ee72f86);
 background-size: cover;
+background-attachment: fixed;
 }
 
 
@@ -271,6 +272,20 @@ color: white;
 #links a:active{
 
 }
+#links a img {
+  width: 120px;
+    position: absolute;
+    transform: translate(-50%,-100%) scale(0);
+    transform-origin: 50% 100%;
+    left: 50%;
+    opacity: 0;
+    transition-duration: .5s;
+}
+#links a:hover img {
+  transform: translate(-50%,-100%) scale(1);
+  opacity: 1;
+}
+
 @keyframes square-anim {
   0% {
     transform: scale(0) rotate(90deg) translateY(100%);
