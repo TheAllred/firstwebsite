@@ -1,5 +1,5 @@
 html {
-  color: #333;
+  color: rgb(214, 214, 214);
 }
 body {
   margin: 0;
@@ -7,11 +7,7 @@ body {
   text-align: center;
   font-family: sans-serif;
   background: #202020;
-background: url(https://images.unsplash.com/photo-1467173572719-f14b9fb86e5f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b734e103303c5965225682077ee72f86);
-background-size: cover;
-background-attachment: fixed;
 }
-
 
 nav {
   text-align: left;
@@ -42,12 +38,12 @@ nav a:link {
   box-shadow: 0px 0px 0px transparent;
   padding: 0px 15px;
   margin: 0px;
-  transition-duration: .25s;
+  transition-duration: 0.25s;
   line-height: 40px;
 }
 
 nav a:hover {
-  background: #2D2D2D;
+  background: #2d2d2d;
   color: inherit;
 }
 
@@ -60,7 +56,8 @@ nav a:active {
   transition-duration: 0s;
 }
 
-main,footer {
+main,
+footer {
   min-width: 320px;
   width: 60vw;
   margin: auto;
@@ -71,9 +68,9 @@ main,footer {
 }
 .video {
   border: 1px solid #ccc;
-  height:40vmin;
+  height: 40vmin;
   background: white;
-  background-image:url(../img/osrtiges.jpg);
+  background-image: url(../img/osrtiges.jpg);
   background-size: contain;
   background-position: 50% 100%;
   background-repeat: no-repeat;
@@ -96,10 +93,11 @@ footer a:visited {
 }
 
 main {
-  background-color: #B8A9DC;
+  background-color: #b8a9dc;
 }
 
-h1,h2 {
+h1,
+h2 {
 }
 main h1 {
   min-width: 280px;
@@ -112,7 +110,7 @@ main h1:after {
   width: 60%;
   height: 4px;
   background: purple;
-  content: ' ';
+  content: " ";
   display: block;
   border-radius: 100px;
   margin: auto;
@@ -146,18 +144,18 @@ h2.name {
   animation-direction: alternate;
 }
 @keyframes pulser-anim {
-    0%   {
-      background: #6B37E6;
-      border-color: TRANSPARENT;
-      width: 230px;
-      height: 230px;
-    }
-    100% {
-      background: #005ece;
-      border-color: transparent;
-      width: 200px;
-      height: 200px;
-    }
+  0% {
+    background: #6b37e6;
+    border-color: TRANSPARENT;
+    width: 230px;
+    height: 230px;
+  }
+  100% {
+    background: #005ece;
+    border-color: transparent;
+    width: 200px;
+    height: 200px;
+  }
 }
 .pulser2 {
   position: absolute;
@@ -175,12 +173,12 @@ h2.name {
   background: #404040;
 }
 @keyframes pulser2-anim {
-    0%   {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(90deg);
-    }
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
 }
 
 .canvas {
@@ -209,81 +207,14 @@ h1#logo {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.5rem;
-  padding:  .5em 1em;
+  padding: 0.5em 1em;
   margin: 0px;
   text-align: center;
   color: #eee;
-  background: rgba(0,0,0,.6);
-  box-shadow: 0px 0px 16px rgba(0,0,0,.8),
-              0px 0px 64px black inset;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.8), 0px 0px 64px black inset;
   border: 2px solid #eee;
   white-space: nowrap;
-}
-h1#logo2 {
-  position: fixed;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2.5rem;
-  padding:  .5em 1em;
-  margin: 0px;
-  text-align: center;
-  color: #eee;
-  background: rgba(0,0,0,.6);
-  box-shadow: 0px 0px 16px rgba(0,0,0,.8),
-              0px 0px 64px black inset;
-  border: 2px solid #eee;
-  white-space: nowrap;
-}
-#TextBox {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding:  .5em 1em;
-  margin: 0px;
-  text-align: left;
-  color: #eee;
-  background: rgba(0,0,0,.6);
-  box-shadow: 0px 0px 16px rgba(0,0,0,.8),
-              0px 0px 64px black inset;
-  border: 2px solid #eee;
-
-}
-
-#links {
-  position: fixed;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#links a:link{
-  color: white;
-  text-decoration: none;
-  padding:4px 10px;
-}
-#links a:visited{
-color: #a5a5a5;
-
-}
-#links a:hover{
-  background: rgba(0,0,0,.3);
-}
-#links a:active{
-
-}
-#links a img {
-  width: 120px;
-    position: absolute;
-    transform: translate(-50%,-100%) scale(0);
-    transform-origin: 50% 100%;
-    left: 50%;
-    opacity: 0;
-    transition-duration: .5s;
-}
-#links a:hover img {
-  transform: translate(-50%,-100%) scale(1.3);
-  opacity: 1;
 }
 
 @keyframes square-anim {
